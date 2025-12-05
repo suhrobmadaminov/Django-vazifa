@@ -1,0 +1,11 @@
+<h1>{{student_name}}</h1>
+
+{% if score >= 60 %}
+    <p>'Tabriklaymiz siz o'tdingiz'</p>
+{% else %}
+    <p>'Afsus qayta topshiring'</p>
+{% endif %}
+
+{% for subject in subject_list %}
+    <li>{{ subject }}</li>
+{% endfor %}
